@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <script src="components/loader.js"></script>
+
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      input.form-control, select{
+        margin-bottom: 15px;
+      }
+      h2, h3, h4{
+        font-weight: bolder;
+        color: #FF1493;
+        text-align:center;
+      }
+      ul li{
+        list-style: none;
+        text-align: center;
+        color:red;
+        font-weight: bold;
+      }
+      textarea{
+        margin-bottom:10px;
+      }
+      button{
+        border-radius: 8px;
+        background-color: rgb(165, 14, 165);
+        color: white; 
+        font-weight: bold;
+        padding: 8px;
+        margin-bottom: 20px;
+      }
+      .infoVitima{
+        padding: 5px;
+        border-radius:5px;
+        box-shadow: 1px 2px 8px rgba(165, 14, 165,100);
+        border: 1px solid  rgb(165, 14, 165);
+      }
+    </style>
+</head>
+<body>
+    <section class="container navStyle">
+        <div class="row">
+          <div class="col-xs-3">
+            <a style="color:white;"href="home.html"><p>< iGirl</p></a>
+          </div>
+          <div class="col-xs-5">
+            <p class="text-right">seunome@email.com</p>
+          </div>
+          <div class="col-xs-4">
+            <img src="img/icon4.png" alt="">
+          </div>
+        </div>
+    
+    </section>
+    <section class="container formularioStyle">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Formulário de Denúncia</h2>
+          <ul>
+            <li class="text-danger">Sempre denuncie!</li>
+            <li  class="text-danger">Toda informação é importante.</li>
+            <li  class="text-danger">Você jamais está sozinha.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="infoVitima form-group">
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>Informações da Vítima</h3>
+            <label for="nome"> *Digite seu nome completo</label>
+            <input class="form-control" type="text">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6"> 
+            <label for="cpf"> *CPF </label>
+            <input class="form-control" type="text" placeholder="xxx-xxx-xxx-xx">
+          </div>
+          <div class="col-xs-6"> 
+            <label for="cpf"> *Data de Nascimento </label>
+            <input class="form-control"  type="date" placeholder="">
+          </div>
+        </div>
+      </div>
+      <div class="form-group infoVitima">
+        <div class="row">
+          <div class="col-xs-12">
+            <h3> Detalhes do caso </h3>
+            <label for="nomeAgressor">Nome do Agressor</label>
+            <input class="form-control" type="text">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-xs-12">
+            <label for="tipo">Tipo de denúncia:</label>
+            <select class="form-control" name="tipo" id="">
+              <option value="none">Selecionar</option>
+              <option value="">Agressão doméstica</option>
+              <option value="">Agressão psicológica </option>
+              <option value="">Assédio</option>
+              <option value="">Estupro</option>
+              <option value="">Outras/Multiplas Denuncias</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <label> Você foi ameaçada?</label>
+            <div class="radio">
+              <label for="ameaca">
+              <input class  type="radio" name="ameaca" value="s"> Sim
+              </label>
+              <label for="ameaca">
+              <input class  type="radio" name="ameaca" value="n"> Não
+              </label>
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <label> Já havia acontecido?</label>
+            <div class="radio">
+              <label for="vez">
+              <input class  type="radio" name="vez" value="s"> Sim
+              </label>
+              <label for="ameaca">
+              <input class  type="radio" name="vez" value="n"> Não
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+             <label for="description"> Descreva o acontecimento: </label>
+             <textarea placeholder="Não tenha medo, descreva tudo o que se recordar, cada detalhe é importante para o apuramento do caso e sua segurança! Nada é bobagem." class="form-control"name="" id="" cols="12" rows="5"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <a href="http://www.cidadao.sp.gov.br/servico.php?serv=1715"><button class="btn-block">Registrar boletim de ocorrência </button><a>
+        </div>
+      </div>
+    </section>
+</body>
+</html>

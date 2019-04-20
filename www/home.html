@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <script src="components/loader.js"></script>
+
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      a:link{
+        text-decoration: none;
+        color:black;
+      }
+      button{
+        border: 1px #FF1493 solid;
+        background: none;
+        font-weight: bolder;
+        font-family: arial;
+        color: rgb(156, 32, 146);
+      }
+      button:hover{
+        background-color:  rgba(175, 0, 44, 0.342);
+        box-shadow: inset 0 0 0 6px #FF1493;
+        transform: scale(0.9); 
+        transition: 1s;
+      }
+      .menuStyle{
+        margin-bottom: 25%;
+        margin-top: 10%;
+      }
+      .menuStyle button.btnOpcMenu{
+        width: 100%;
+        height:100%;
+        display: block;
+        border-radius: 15px;
+        padding: 15px 0px 15px 0px;
+        margin: 0px 0px 5px 0px;
+      }
+      .menuStyle button.btnOpcMenu img{
+        width:50%;
+        margin: 20px;
+      }
+      h1{
+        text-align:center;
+        font-size: 23pt;
+        font-weight: bolder;
+        color: white;
+        text-shadow: 2px -1px 7px  #FF1493;
+        margin-bottom: 0px;
+      }
+      p.aviso{
+        font-family: arial;
+        text-align:center;
+        font-weight: bolder;
+        color: rgb(156, 32, 146);
+      }
+      p.aviso2{
+        font-size: 9pt;
+        font-family: arial;
+        text-align:center;
+        font-weight: bolder;
+        color: rgba(156, 32, 125, 0.5);
+        margin: 0;
+        padding:0px;
+      }
+    </style>
+</head>
+<body>
+    <section class="container navStyle">
+        <div class="row">
+          <div class="col-xs-3">
+            <p>iGirl</p>
+          </div>
+          <div class="col-xs-5">
+            <p class="text-right">seunome@email.com</p>
+          </div>
+          <div class="col-xs-4">
+            <img src="img/icon4.png" alt="">
+          </div>
+        </div>
+    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>MENU</h1>
+          <p class="aviso">Atenção, aplicativo em desenvolvimento.</p>
+        </div>
+      </div>
+      <section class="menuStyle">
+        <div class="row">
+          <div class="col-xs-4">
+            <a href="timeline.html"><button class=" btnOpcMenu"><img src="img/iconCommunity.png" alt=""> TimeLine </button></a>
+          </div>
+          <div class="col-xs-4">
+             <a href="denuncia.html"><button class=" btnOpcMenu"><img src="img/iconEuMulher.png" alt=""> EuMulher</button></a>
+          </div>
+          <div class="col-xs-4">
+             <a href="sos.html"><button class=" btnOpcMenu"><img src="img/iconParaVoce.png" alt="">Para Você</button></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4">
+            <a href="sobre.html"><button class=" btnOpcMenu"><img src="img/iconNotice.png" alt=""> Noticias </button></a>
+          </div>
+          <div class="col-xs-4">
+             <a href="denuncia.html"><button class=" btnOpcMenu"><img src="img/iconDenucie.png" alt=""> Denuncie</button></a>
+          </div>
+          <div class="col-xs-4">
+             <a href="sos.html"><button class=" btnOpcMenu"><img src="img/iconHelp.png" alt="">  S.O.S</button></a>
+          </div>
+        </div>
+      </section>
+      <div class="row">
+          <div class="col-xs-12"> 
+             <p class="aviso2">Escola Estadual Francisco Martins Dos Santos</p> 
+             <p class="aviso2">Projeto: Dia da Mulher</p>
+             <p class="aviso2">Contribuidores: Carlos Emilio, Ezequiel Alves, Guilherme Rodrigues, Nicolas Emanuel 3ºA </p>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

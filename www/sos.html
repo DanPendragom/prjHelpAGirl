@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <script src="components/loader.js"></script>
+    
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      button{
+        padding: 8px;
+        margin: 20px 0 20px 0;
+        background-color: red;
+        font-family: arial;
+        font-weight: bold;
+        font-size: 14pt;
+        border-radius:25px;
+        color: white;
+      }
+      button img{
+        widht: 55%;
+      }
+      h3{
+        text-align: center;
+        font-family: arial; 
+        font-weight: bold;
+        font-size: 16pt;
+        color: #FF1493;
+        margin: 0px 0px 0px 0px;
+      }
+      .agendaStyle p{
+        border: 1px solid rgb(165, 14, 165);
+        border-radius: 5px;
+        font-weight: bolder;
+        color: rgb(165, 14, 165);
+      }
+      .agendaStyle a{
+        color: rgb(165, 14, 165);
+      }
+      .agendaStyle img{
+        width: 30%;
+        padding: 5px;
+        background-color:rgb(165, 14, 165);
+      }
+      .newContact p{
+        border: 1px solid rgb(0, 190, 48);
+        border-radius: 5px;
+        font-weight: bolder;
+      }
+      .newContact a{
+        color: rgb(0, 190, 48);
+      }
+      .newContact img{
+        width: 15%;
+        height:100%;
+        padding: 5px;
+        background-color: rgb(0, 190, 48);
+        border-radius: 5px 0px 0px 5px ;
+      }
+    </style>
+</head>
+<body>
+    <section class="container navStyle">
+        <div class="row">
+          <div class="col-xs-3">
+            <a style="color:white;"href="home.html"><p>< iGirl</p></a>
+          </div>
+          <div class="col-xs-5">
+            <p class="text-right">seunome@email.com</p>
+          </div>
+          <div class="col-xs-4">
+            <img src="img/icon4.png" alt="">
+          </div>
+        </div>
+    </section>
+    <section class="container sosStyle">
+      <div class="row">
+        <div class="col-xs-12">
+          <button class=" btn-block"><img src="img/iconCall.png" alt="">   EMERGÊNCIA</button>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>Agenda</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <h3>Socorro</h3>
+            <div class="row">
+              <div class="agendaStyle col-xs-12"> 
+                <p><img src="img/iconPolice.png" alt="">  Policia<a href="#"> 190</a></p>
+              </div>
+              <div class="agendaStyle col-xs-12"> 
+                <p><img src="img/iconPoliceFem.png" alt="">  Denuncia<a href="#"> 180</a></p>
+              </div>
+              <div class="agendaStyle col-xs-12"> 
+                <p><img src="img/iconAmbulance.png" alt="">  Samu<a href="#"> 192</a></p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-xs-6">
+            <h3>Contatos</h3>
+            <div class="row">
+              <div class="agendaStyle col-xs-12"> 
+                  <p><img src="img/iconMother.png" alt="">  <a href="#"> Mãe </a></p>
+              </div>
+              <div class="agendaStyle col-xs-12"> 
+                <p><img src="img/iconFeather.png" alt="">  <a href="#">Pai </a></p>
+              </div>
+              <div class="agendaStyle col-xs-12"> 
+                <p><img src="img/iconBrother.png" alt=""> <a href="#">Irmão</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="newContact col-xs-12"> 
+                <p><img src="img/iconAdd.png" alt=""> <a href="#"> Adicionar novo contato</a></p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</body>
+</html>
